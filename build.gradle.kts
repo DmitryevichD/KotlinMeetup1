@@ -39,6 +39,7 @@ dependencies {
     implementation("io.springfox:springfox-swagger2:${swaggerVersion}")
     implementation("io.springfox:springfox-swagger-ui:${swaggerVersion}")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+    implementation("io.github.microutils:kotlin-logging:${kotlinLoggingVersion}")
 
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
