@@ -31,6 +31,7 @@ val kotlinLoggingVersion = "1.7.6"
 val kotlinMockitoVersion = "2.2.0"
 
 dependencies {
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("org.springframework.boot:spring-boot-starter")
