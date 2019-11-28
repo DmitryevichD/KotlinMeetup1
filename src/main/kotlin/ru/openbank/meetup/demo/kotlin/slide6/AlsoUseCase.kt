@@ -1,11 +1,10 @@
 package ru.openbank.meetup.demo.kotlin.slide6
 
 import mu.KotlinLogging
-import ru.openbank.meetup.demo.java.slide6.ApplicationField
 
 private val logger = KotlinLogging.logger {}
 
-private fun String?.regexMatches(fieldConfig: ApplicationField): Boolean {
+fun String?.regexMatches(fieldConfig: ApplicationField): Boolean {
     val regex = fetchRegex(fieldConfig)
     return when (regex) {
         null -> true.also { logger.trace("Regex is not specified for this field [${fieldConfig.name}]") }
