@@ -5,6 +5,10 @@ plugins {
     id("io.spring.dependency-management") version "1.0.8.RELEASE"
     kotlin("jvm") version "1.3.50"
     kotlin("plugin.spring") version "1.3.50"
+    // @see: https://arturbosch.github.io/detekt/
+    id("io.gitlab.arturbosch.detekt") version "1.1.1"
+    // @see: https://ktlint.github.io/
+    id("org.jlleitschuh.gradle.ktlint") version "9.0.0"
 }
 
 group = "ru.openbank.meetup"

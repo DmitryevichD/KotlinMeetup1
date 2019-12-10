@@ -5,4 +5,5 @@ fun TODOs() {
     TODO("let run also apply with")
     TODO("it callbacks")
     TODO("plugins + hibernate")
+    TODO("mockito-kotlin")
 }
