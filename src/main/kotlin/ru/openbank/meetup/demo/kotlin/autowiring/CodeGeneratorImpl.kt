@@ -6,6 +6,4 @@ import ru.openbank.meetup.demo.java.autowiring.CodeGeneratorService
 @Service
 class CodeGeneratorImpl(
     private val usedCodeRepository: UsedCodeRepository
-) : CodeGeneratorService {
-
-}
+) : CodeGeneratorService

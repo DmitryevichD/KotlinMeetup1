@@ -12,7 +12,7 @@ class TrailingLambdasUseCase {
     }
 
     private fun invokeTrailingLambdaWithParam(otpDto: OtpDto, lambdaParam: (OtpDto) -> String?): String? {
-        return lambdaParam.invoke(otpDto)
+        return lambdaParam(otpDto)
     }
 
     fun lambdaUse() {

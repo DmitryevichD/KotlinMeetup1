@@ -1,7 +1,7 @@
 package ru.openbank.meetup.demo.kotlin.slide2
 
 //TODO: DO NOT FORGET TO REPLACE COMPONENTS ON CHANGING CONSTRUCTOR
-class DestructableOtpDto(
+class DestructuredOtpDto(
     var otp: String? = null,
     var phone: String? = null
 ) {

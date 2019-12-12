@@ -4,15 +4,18 @@ import ru.openbank.meetup.demo.kotlin.slide6.ApplicationField
 import ru.openbank.meetup.demo.kotlin.slide6.regexMatches
 
 // can be public
-fun CharSequence?.isNotNullOrEmpty(): Boolean = !this.isNullOrEmpty()
+fun isNotNullOrEmpty(charSequence: CharSequence?): Boolean = !charSequence.isNullOrEmpty()
 
 // can be private
-private fun CharSequence?.isNotNullOrBlank(): Boolean = !this.isNullOrBlank()
+private fun isNotNullOrBlank(charSequence: CharSequence?): Boolean = !charSequence.isNullOrBlank()
 
 fun main() {
     val otp: String? = "4567"
-    val notNullOrEmpty = otp.isNotNullOrEmpty()
-    val notNullOrBlank = otp.isNotNullOrBlank()
+    val notNullOrEmpty = isNotNullOrEmpty(otp)
+    val notNullOrBlank = isNotNullOrBlank(otp)
 
-    "".regexMatches(ApplicationField())
+    "[0-9]{4}".regexMatches(ApplicationField())
+
+    println(notNullOrEmpty)
+    println(notNullOrBlank)
 }

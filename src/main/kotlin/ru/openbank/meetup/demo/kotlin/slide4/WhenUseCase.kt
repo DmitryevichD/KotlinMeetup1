@@ -29,3 +29,7 @@ object InnValidator {
         return true
     }
 }
+
+fun main() {
+    InnValidator.isValid("")
+}
